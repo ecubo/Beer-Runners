@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Aplicación -->
+    <string name="app_name">Beer Runners</string>
+    <string name="title">BEER RUNNERS</string>
+    <string name="url_api_rest">http://run4beer.beerrunners.es/api/</string>
+    <string name="error_no_internet">No se ha podido acceder al servicio de Run4Beer de internet</string>
+    <string name="splash_mayor_de_edad_title">Confirmar Edad</string>
+    <string name="splash_mayor_de_edad">Está aplicación sólo puede ser usada por mayores de edad.\n\n¿Eres mayor de edad?</string>
+
+    <!-- Splash Screen -->
+    <string name="cargando">Cargando…</string>
+
+    <!-- Tab Home -->
+    <string name="home_guardar">Guardar</string>
+    <string name="home_guardar_en_galeria">¿Seguro que quiere guardar la foto en su galería?</string>
+    <string name="home_no">No</string>
+    <string name="home_si">Sí</string>
+
+    <!-- Tab Agenda -->
+    <string name="agenda_bkg">Agenda</string>
+    <string name="agenda_0noticias_titulo">Sin noticias</string>
+    <string name="agenda_0noticias_minidesc">Conéctate a internet para descargar las últimas noticias</string>
+    <string name="agenda_sin_tag">Sin tag</string>
+
+    <!-- Tab Run4Beer -->
+    <string name="r4b_agregar_carrera">AÑADIR NUEVA CARRERA</string>
+    <string name="r4b_borrar_carrera">ELIMINAR CARRERA</string>
+    <string name="r4b_editar_carrera">EDITAR CARRERA</string>
+    <string name="r4b_cancelar_carrera">CANCELAR</string>
+    <string name="r4b_bkg">Agenda</string>
+    <string name="r4b_borrar_si">Borrar</string>
+    <string name="r4b_borrar_no">Cancelar</string>
+    <string name="r4b_borrar_title">Confirmar borrado</string>
+    <string name="r4b_borrar_mensaje">¿Está seguro de querer borrar la carrera seleccionada?</string>
+    <string name="r4b_add_str1">¿CUÁNTOS KILÓMETROS HAS CORRIDO?</string>
+    <string name="r4b_add_kmrec">Kilómetros Recorridos</string>
+    <string name="r4b_add_btn_aceptar">Aceptar</string>
+    <string name="r4b_add_btn_guardar">Guardar</string>
+    <string name="r4b_frase_no_valido">No parece una distancia válida, por favor, introduce otra distancia.</string>
+    <string name="r4b_frase_no_valido_fecha">Debe seleccionar una fecha para agregar una carrera</string>
+    <string name="r4b_frase_0km">Hombre, para una cerveza hay que correr algo más…</string>
+    <string name="r4b_frase_default">¿Preparado? ¡Empieza a correr y gánate esa cerveza!</string>
+    <string name="r4b_resumen_carrera">"Has hecho {km} kilómetros en {dias} día"</string>
+    <string name="r4b_resumen_carreras">"Has hecho {km} kilómetros en {dias} días"</string>
+    <string name="r4b_str1">ERES UN MÁSTER\nESTÁS HECHO TODO UN BEER RUNNER\n¡TE MERECES ESA CERVEZA!</string>
+    <string name="r4b_str3">HAS HECHO</string>
+    <string name="r4b_str4">{km}</string>
+    <string name="r4b_str5">KM</string>
+    <string name="r4b_str6">BEBE CON MODERACIÓN</string>
+
+    <!-- Tab Pasaporte -->
+    <string name="pasaporte_exito">¡Pasaporte insertado con éxito!</string>
+    <string name="pasaporte_fallo">El código introducido no pertenece a ningún bar</string>
+    <string name="pasaporte_error">Error al insertar el pasaporte</string>
+    <string name="pasaporte_ya_insertado">Ya has insertado este pasaporte</string>
+    <string name="pasaporte_mensaje_inicial">¡Aún no has metido ningún pasaporte!</string>
+    <string name="pasaporte_verificar">VERIFICAR CÓDIGO</string>
+    <string name="pasaporte_ver_sellos">VER SELLOS</string>
+
+    <!-- Tab Mapa -->
+    <string name="no_maps">Google Maps no está disponible</string>
+    <string name="bar">Bar asociado a Run 4 Beer</string>
+    <string name="pick_date">Toca para seleccionar fecha</string>
+    <string name="mas_info">Pincha para ver más info</string>
+
+
+</resources>

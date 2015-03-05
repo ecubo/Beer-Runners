@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="8dp">
+ 
+    <TextView
+        android:id="@+id/agendaFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="@color/fecha"
+        android:textSize="@dimen/fecha" />
+    <TextView
+        android:id="@+id/agendaTitulo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agendaFecha"
+        android:textStyle="bold"
+        android:textColor="@color/titulo"
+        android:textSize="@dimen/titulo" />
+    <TextView
+        android:id="@+id/agendaMinidesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agendaTitulo"
+        android:textColor="@color/minidesc"
+        android:textSize="@dimen/minidesc" /> 
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/agendaUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/minidesc"
+        android:layout_below="@id/agendaMinidesc" />
+    
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/agendaDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/agendaUrl"
+        android:textColor="@color/desc2"
+        android:textSize="@dimen/desc2" />
+</RelativeLayout>

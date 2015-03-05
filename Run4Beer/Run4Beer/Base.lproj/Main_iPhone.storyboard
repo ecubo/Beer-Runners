@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TAm-2J-gFy">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--R 4b Home View Controller - First-->
+        <scene sceneID="W3I-pn-N6e">
+            <objects>
+                <viewController title="First" id="CZ4-MO-1fc" userLabel="R 4b Home View Controller - First" customClass="r4bFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s9W-kb-ARv"/>
+                        <viewControllerLayoutGuide type="bottom" id="dtj-EO-iXF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="u1e-5L-l1D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-127" y="-883"/>
+        </scene>
+        <!--R 4b Agenda View Controller - Second-->
+        <scene sceneID="ot8-2e-RuS">
+            <objects>
+                <viewController title="Second" id="QUy-BD-bpt" userLabel="R 4b Agenda View Controller - Second" customClass="r4bSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FgS-U6-xeU"/>
+                        <viewControllerLayoutGuide type="bottom" id="stI-4g-hlJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo-Cerveza-fria" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-Gy-PKb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Xv-sQ-dOF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agenda" id="anW-A7-2ry">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Eac-ry-osp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="0Xv-sQ-dOF" id="aD9-86-CEm"/>
+                        <outlet property="searchTopButton" destination="Eac-ry-osp" id="v12-6V-Hj1"/>
+                        <segue destination="xl7-vC-mUZ" kind="push" identifier="viewAgendaItemSegue" id="Wov-OO-dYh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341" y="-506"/>
+        </scene>
+        <!--R 4b Agenda Item View Controller-->
+        <scene sceneID="kQD-6U-kLa">
+            <objects>
+                <viewController id="xl7-vC-mUZ" userLabel="R 4b Agenda Item View Controller" customClass="r4bAgendaItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KZ1-b0-zrN"/>
+                        <viewControllerLayoutGuide type="bottom" id="mSl-zh-SNk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vlU-k9-fu0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0t7-zN-xgc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Noticia" id="pa9-ve-e1v"/>
+                    <connections>
+                        <outlet property="scrollView" destination="0t7-zN-xgc" id="6wV-Ao-dea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdO-eI-cJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="-506"/>
+        </scene>
+        <!--R 4b Mapa View Controller - Fifth-->
+        <scene sceneID="T42-Dg-h0L">
+            <objects>
+                <viewController id="FDJ-Fu-lpI" userLabel="R 4b Mapa View Controller - Fifth" customClass="r4bFifthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CHb-UT-xh5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vd2-hW-FuL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KiL-kQ-6XF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Zn-rF-Ny9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0j-gp-2YO">
+                                <rect key="frame" x="16" y="20" width="30" height="30"/>
+                                <state key="normal" image="my_location"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="Mapa" id="bZJ-fT-ylp"/>
+                    <connections>
+                        <outlet property="button" destination="b0j-gp-2YO" id="yi1-lp-jSp"/>
+                        <outlet property="mapView" destination="2Zn-rF-Ny9" id="6r0-Nq-agU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Gg-6Y-7KM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="1962"/>
+        </scene>
+        <!--R 4b Run4Beer View Controller - Third-->
+        <scene sceneID="pCL-q9-9vA">
+            <objects>
+                <viewController id="Ljw-zC-DtY" userLabel="R 4b Run4Beer View Controller - Third" customClass="r4bThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9PO-xL-Hvi"/>
+                        <viewControllerLayoutGuide type="bottom" id="XaN-O8-Ht5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UJt-L9-Hdd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo-Cerveza-fria" translatesAutoresizingMaskIntoConstraints="NO" id="buW-dz-VqA">
+                                <rect key="frame" x="0.0" y="-5" width="320" height="524"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QNk-dL-4yp">
+                                <rect key="frame" x="0.0" y="111" width="320" height="408"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Run4Beer" id="SRg-jF-zV8"/>
+                    <connections>
+                        <outlet property="scrollView" destination="QNk-dL-4yp" id="mow-QQ-vm7"/>
+                        <segue destination="KEZ-xt-47L" kind="push" identifier="viewNuevaCarreraSegue" id="2PR-u4-tLz"/>
+                        <segue destination="m1a-Wd-Mvq" kind="push" identifier="viewEditCarreraSegue" id="nCn-bw-rEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dua-i9-dDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="168"/>
+        </scene>
+        <!--Run4Beer-->
+        <scene sceneID="s7V-cZ-SKt">
+            <objects>
+                <viewController id="eaT-AF-XAT" customClass="r4bGeneralRun4Beer" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tgf-kC-Kbw"/>
+                        <viewControllerLayoutGuide type="bottom" id="YgJ-Jm-GzT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ibL-sk-bhz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo-Cerveza-fria" translatesAutoresizingMaskIntoConstraints="NO" id="evW-I3-utk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="HUv-K2-TiW"/>
+                                    <constraint firstAttribute="width" secondItem="evW-I3-utk" secondAttribute="height" multiplier="320:519" id="Ng0-NH-n7T"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="generalRun4Beer" translatesAutoresizingMaskIntoConstraints="NO" id="STs-pc-2OT">
+                                <rect key="frame" x="186" y="190" width="118" height="206"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="B6n-YA-GaD"/>
+                                    <constraint firstAttribute="height" constant="206" id="IgX-5F-MAw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="evW-I3-utk" firstAttribute="leading" secondItem="ibL-sk-bhz" secondAttribute="leading" id="Kru-na-AgX"/>
+                            <constraint firstItem="STs-pc-2OT" firstAttribute="top" secondItem="Tgf-kC-Kbw" secondAttribute="bottom" constant="126" id="eof-hZ-FsT"/>
+                            <constraint firstItem="STs-pc-2OT" firstAttribute="trailing" secondItem="ibL-sk-bhz" secondAttribute="trailingMargin" id="ih8-fF-cmZ"/>
+                            <constraint firstItem="evW-I3-utk" firstAttribute="bottom" secondItem="YgJ-Jm-GzT" secondAttribute="top" id="ogO-os-QAf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Run4Beer" id="5gx-Q0-pW8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="MQw-EF-7JU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="trashTopButton" destination="MQw-EF-7JU" id="dEB-R0-hd0"/>
+                        <segue destination="Ljw-zC-DtY" kind="push" identifier="deGeneralAVerCarrerasSegue" id="ibt-S9-0QB"/>
+                        <segue destination="KEZ-xt-47L" kind="push" identifier="deGeneralANuevaCarreraSegue" id="k39-YI-tnC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfy-mn-7to" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341" y="168"/>
+        </scene>
+        <!--R 4b Nueva Carrera View Controller-->
+        <scene sceneID="5cv-Xe-HJd">
+            <objects>
+                <viewController id="KEZ-xt-47L" userLabel="R 4b Nueva Carrera View Controller" customClass="r4bNuevaCarreraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bDf-AA-27n"/>
+                        <viewControllerLayoutGuide type="bottom" id="UD3-GR-5l0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q5W-NW-eHf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo-Cerveza-fria" translatesAutoresizingMaskIntoConstraints="NO" id="vxp-Or-EQ5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Carrera" id="OaS-6H-jNS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaS-tS-YK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="168"/>
+        </scene>
+        <!--R 4B Pasaporte View Controller-->
+        <scene sceneID="OOt-aX-2o1">
+            <objects>
+                <viewController storyboardIdentifier="pasaporteViewController" id="gNH-cf-AwM" userLabel="R 4B Pasaporte View Controller" customClass="r4bPasaporteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u46-Yx-ZaG"/>
+                        <viewControllerLayoutGuide type="bottom" id="7jo-zV-ltl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rfs-Tf-9kd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo-Cerveza-fria" translatesAutoresizingMaskIntoConstraints="NO" id="U0z-hk-vUL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pasaporte" image="Pasaporte" id="lWU-Jz-JK1"/>
+                    <connections>
+                        <segue destination="XHw-UG-on3" kind="modal" identifier="PasaportePagerSellosSegue" id="Yu4-7U-ZBi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ho2-gv-lei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="-142"/>
+        </scene>
+        <!--R 4b Pasaporte View Controller - Fourth-->
+        <scene sceneID="amQ-hP-ej1">
+            <objects>
+                <viewController id="XHw-UG-on3" userLabel="R 4b Pasaporte View Controller - Fourth" customClass="r4bFourthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lKH-6L-EXS"/>
+                        <viewControllerLayoutGuide type="bottom" id="6oD-zV-doX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Oi-Wk-Hgh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n0E-eP-K24"/>
+                    <connections>
+                        <outlet property="button" destination="i2m-dD-2OQ" id="b4G-oD-Upe"/>
+                        <outlet property="view" destination="0Oi-Wk-Hgh" id="Lop-jY-pLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5YT-oR-Veh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="572"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="FNb-QR-abH">
+            <objects>
+                <pageViewController storyboardIdentifier="PasaportePageController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="8yx-bM-Rr0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnH-0T-FhP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="572"/>
+        </scene>
+        <!--R 4b Pasaporte Page Item Controller-->
+        <scene sceneID="uo8-bj-HCS">
+            <objects>
+                <viewController storyboardIdentifier="PasaporteItemController" id="Ump-Re-kQM" userLabel="R 4b Pasaporte Page Item Controller" customClass="r4bPasaportePageItemController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6L4-IC-EXx"/>
+                        <viewControllerLayoutGuide type="bottom" id="DOy-SB-i4S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fmL-VO-gM3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g32-Gs-CAx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2m-dD-2OQ">
+                                <rect key="frame" x="16" y="20" width="59" height="22"/>
+                                <state key="normal" title="Cerrar">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="i2m-dD-2OQ" id="YrF-kp-7lJ"/>
+                        <outlet property="contentImageView" destination="g32-Gs-CAx" id="MEe-Un-A1c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaP-ma-Ycn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319" y="572"/>
+        </scene>
+        <!--R 4b False Splash Screen-->
+        <scene sceneID="ygn-8Z-qQi">
+            <objects>
+                <viewController id="TAm-2J-gFy" customClass="r4bFalseSplashScreen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nfz-ac-Ygk"/>
+                        <viewControllerLayoutGuide type="bottom" id="WJg-T2-zAt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ruc-Kt-l7G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kmd-ZZ-rKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-978" y="-1487"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController storyboardIdentifier="inicioDeApp" id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="659-KN-QLX" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="mzg-if-lbO" kind="relationship" relationship="viewControllers" id="X0n-4i-CPf"/>
+                        <segue destination="FDJ-Fu-lpI" kind="relationship" relationship="viewControllers" id="RyC-UV-aEP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-872" y="-833"/>
+        </scene>
+        <!--Agenda-->
+        <scene sceneID="IOV-Up-Rqb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="659-KN-QLX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Agenda" image="Agenda" id="Z7h-1E-pvt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="3MY-Gy-Ps5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="rootViewController" id="riQ-3g-w6D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGa-St-VPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="-506"/>
+        </scene>
+        <!--Run4Beer-->
+        <scene sceneID="WkN-bL-gpa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mzg-if-lbO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Run4Beer" image="Run4Beer" id="5At-v1-ZYx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="51e-XE-LKD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eaT-AF-XAT" kind="relationship" relationship="rootViewController" id="4T0-Os-jqw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Nr-KZ-nud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805" y="168"/>
+        </scene>
+        <!--R 4b Edit Carrera View Controller-->
+        <scene sceneID="k1t-HL-l3w">
+            <objects>
+                <viewController id="m1a-Wd-Mvq" userLabel="R 4b Edit Carrera View Controller" customClass="r4bEditCarreraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddc-SM-xtF"/>
+                        <viewControllerLayoutGuide type="bottom" id="V16-bR-umI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TVZ-Bs-F9T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo-Cerveza-fria" translatesAutoresizingMaskIntoConstraints="NO" id="h0x-DO-hQt">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Carrera" id="oFv-1D-whK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFl-L5-pMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752" y="911"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Agenda" width="30" height="30"/>
+        <image name="Fondo-Cerveza-fria" width="1386" height="1385"/>
+        <image name="Home" width="30" height="30"/>
+        <image name="Mapa" width="30" height="30"/>
+        <image name="Pasaporte" width="30" height="30"/>
+        <image name="Run4Beer" width="30" height="30"/>
+        <image name="generalRun4Beer" width="138" height="230"/>
+        <image name="my_location" width="115" height="117"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="k39-YI-tnC"/>
+    </inferredMetricsTieBreakers>
+</document>

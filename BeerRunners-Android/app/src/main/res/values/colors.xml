@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Globales -->
+    <color name="loading_image">#616160</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="btn">#FF555555</color>
+    <color name="btneliminar">#FFFF0000</color>
+
+    <!-- Noticias -->
+    <color name="fondonoticia">#515150</color>
+
+    <!-- Listado noticias -->
+    <color name="fecha">#FFCD00</color>
+    <color name="fecha_sobre_blanco">#DD9A00</color>
+    <color name="titulo">#FFFFFF</color>
+    <color name="minidesc">#D9D9D9</color>
+
+    <!-- Noticia Individual -->
+    <color name="fecha2">#FFCD00</color>
+    <color name="titulo2">#FFFFFF</color>
+    <color name="desc2">#E3E3E3</color>
+
+</resources>

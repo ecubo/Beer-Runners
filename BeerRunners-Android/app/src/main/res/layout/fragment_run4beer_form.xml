@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText android:id="@+id/dpAddCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="true"
+        android:text=""
+        android:onClick="showDatePickerDialog"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        android:minWidth="150dp" />
+<!--
+    <Button
+        android:id="@+id/dpAddCarrera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_date"
+        android:background="@color/white"
+        android:onClick="showDatePickerDialog" />
+-->
+
+    <EditText android:id="@+id/fechaAddCarrera"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:visibility="gone" />
+
+    <EditText android:id="@+id/kilometrosRecorridos"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/dpAddCarrera"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/r4b_add_kilometrosRecorridos"
+        android:padding="10dp"
+        android:inputType="number"
+        android:digits="0123456789."
+        android:minWidth="100dp" />
+
+    <TextView android:id="@+id/r4b_str5"
+        android:text="@string/r4b_str5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/r4b_add_str5"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/kilometrosRecorridos"
+        android:layout_toEndOf="@+id/kilometrosRecorridos"
+        android:layout_alignBottom="@+id/kilometrosRecorridos"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/mensajeKmRecorridos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kilometrosRecorridos"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+    </LinearLayout>
+
+
+</merge>

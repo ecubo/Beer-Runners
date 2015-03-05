@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:contentDescription="@string/r4b_bkg"
+        android:src="@drawable/general_r4b_doble" />
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ScrollView02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+
+            <TextView android:id="@+id/r4b_str1"
+                android:text="@string/r4b_frase_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/r4b_str1"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp" />
+
+            <TextView android:id="@+id/r4b_str2"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r4b_str1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/r4b_str2"
+                android:textStyle="bold"
+                android:layout_margin="0dp" />
+
+            <TextView android:id="@+id/r4b_str3"
+                android:text="@string/r4b_str3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r4b_str2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r4b_str3"
+                android:textStyle="bold"
+                android:layout_margin="0dp" />
+
+            <TextView android:id="@+id/r4b_str4"
+                android:text="@string/r4b_str4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r4b_str3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r4b_str4"
+                android:textStyle="bold"
+                android:layout_margin="0dp"/>
+
+            <TextView android:id="@+id/r4b_str5"
+                android:text="@string/r4b_str5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r4b_str5"
+                android:textStyle="bold"
+                android:layout_margin="0dp"
+                android:layout_alignBaseline="@+id/r4b_str4"
+                android:layout_toRightOf="@+id/r4b_str4"
+                android:layout_toEndOf="@+id/r4b_str4"/>
+
+            <TextView android:id="@+id/r4b_str6"
+                android:text="@string/r4b_str6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/r4b_str4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/r4b_str6"
+                android:textStyle="bold"
+                android:layout_margin="0dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/agregarCarrera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/btn"
+        android:textColor="@color/white"
+        android:layout_margin="15dp"
+        android:text="@string/r4b_agregar_carrera"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

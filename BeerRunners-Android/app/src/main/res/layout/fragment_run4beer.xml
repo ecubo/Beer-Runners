@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+<!--
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/r4b_bkg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo_cerveza" />
+-->
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/agregarCarrera"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/btn"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"
+                android:text="@string/r4b_agregar_carrera" />
+
+		    <ListView
+		        android:id="@+id/listRun4Beer"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+				android:layout_below="@id/agregarCarrera"
+				android:divider="@android:color/transparent"
+				android:layout_marginTop="15dp"
+				android:layout_marginBottom="15dp"
+				android:layout_marginLeft="15dp"
+				android:layout_marginRight="15dp"
+				android:dividerHeight="30dp"
+				 />
+
+		</RelativeLayout>
+</FrameLayout>

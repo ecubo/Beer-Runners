@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="8dp">
+ 
+    <TextView
+        android:id="@+id/run4beerFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="@color/fecha_sobre_blanco"
+        android:textSize="@dimen/fecha" />
+    <TextView
+        android:id="@+id/run4beerKilometros"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/run4beerFecha"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/titulo" />
+    <TextView
+        android:id="@+id/run4beerFrase"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/run4beerKilometros"
+        android:textColor="@color/black"
+        android:textSize="@dimen/minidesc" /> 
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/fondonoticia" >
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="@dimen/padding_noticia_single" >
+	
+	    <TextView
+	        android:id="@+id/agendaFecha2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+	        android:textStyle="bold"
+	        android:textColor="@color/fecha2"
+	        android:textSize="@dimen/fecha2" />
+	    <TextView
+	        android:id="@+id/agendaTitulo2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/agendaFecha2"
+	        android:textStyle="bold"
+	        android:textColor="@color/titulo2"
+	        android:textSize="@dimen/titulo2" />
+	    <TextView
+            android:visibility="gone"
+	        android:id="@+id/agendaMinidesc2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/agendaTitulo2"
+	        android:textColor="@color/minidesc"
+	        android:textSize="@dimen/minidesc" />
+	
+	    <ImageView
+	        android:id="@+id/agendaUrl2"
+			android:scaleType="fitStart"
+			android:adjustViewBounds="true"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="@dimen/padding_noticia_imagen_topdown"
+	        android:paddingBottom="@dimen/padding_noticia_imagen_topdown"
+	        android:contentDescription="@string/cargando"
+	        android:layout_below="@id/agendaMinidesc2" />
+	    
+	    <TextView
+	        android:id="@+id/agendaDesc2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/agendaUrl2"
+	        android:textColor="@color/desc2"
+	        android:textSize="@dimen/desc2" />
+	</RelativeLayout>
+</ScrollView>

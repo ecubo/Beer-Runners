@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines.
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    -->
+
+    <!-- Globales -->
+    <dimen name="action_bar_title_size">18sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Motivacionales -->
+    <dimen name="round_button_diameter">28dp</dimen>
+    <dimen name="round_button_diameter2">36dp</dimen>
+    <dimen name="add_button_margin">54dp</dimen>
+    <dimen name="add_button_margin_2">16dp</dimen>
+    <dimen name="add_button_margin_bottom">24dp</dimen>
+    <dimen name="add_button_margin_bottom_2">20dp</dimen>
+
+    <!-- Noticias -->
+    <dimen name="padding_noticia_single">16dp</dimen>
+    <dimen name="padding_noticia_imagen_topdown">8dp</dimen>
+
+    <!-- Listado noticias -->
+    <dimen name="fecha">20sp</dimen>
+    <dimen name="titulo">27sp</dimen>
+    <dimen name="minidesc">12sp</dimen>
+
+    <!-- Noticia Individual -->
+    <dimen name="fecha2">21sp</dimen>
+    <dimen name="titulo2">29sp</dimen>
+    <dimen name="desc2">13sp</dimen>
+
+    <!-- R4B General -->
+    <dimen name="r4b_str1">20sp</dimen>
+    <dimen name="r4b_str2">30sp</dimen>
+    <dimen name="r4b_str3">30sp</dimen>
+    <dimen name="r4b_str4">40sp</dimen>
+    <dimen name="r4b_str5">27sp</dimen>
+    <dimen name="r4b_str6">10sp</dimen>
+
+    <!-- R4B Add -->
+    <dimen name="r4b_add_str1">26sp</dimen>
+    <dimen name="r4b_add_kilometrosRecorridos">26sp</dimen>
+    <dimen name="r4b_add_str5">36sp</dimen>
+
+    <!-- Pasaporte -->
+    <dimen name="pasaporte_margin">48dp</dimen>
+    <dimen name="pasaporte_margin_top">48dp</dimen>
+    <dimen name="pasaporte_codigo_margin">18dp</dimen>
+
+
+
+</resources>
